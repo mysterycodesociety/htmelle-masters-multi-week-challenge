@@ -1,0 +1,40 @@
+body.pseudo-classes a:hover, body.pseudo-classes a:focus {
+  border-bottom-color: transparent;
+  color: #8cd1a8;
+  text-decoration: none;
+}
+
+body.pseudo-classes:not(.background-image) a:hover, body.pseudo-classes:not(.background-image) a:focus {
+  color: #689C7D;
+}
+
+body.pseudo-classes header h1::after, 
+body.pseudo-classes header h2::after, 
+body.pseudo-classes header h3::after {
+  content:'';
+  display: block;
+  border: .5px solid #dddddd;
+  margin: 32px auto 0;
+  width: 5em;
+  height: 1px;
+}
+
+body.pseudo-classes #header:hover {
+  opacity: .8;
+}
+
+body.pseudo-classes ul#things li:nth-child(2n) {
+  border-left: 1px solid #dddddd;
+}
+
+body.pseudo-classes ul#things li:nth-child(4n - 2) {
+  border-bottom: 1px solid #dddddd;
+}
+
+body.pseudo-classes ul#things li:nth-child(4n - 3) {
+  border-bottom: 1px solid #dddddd;
+}
+
+body.pseudo-classes #footer ul.copyright li:not(:first-child) {
+  border-left: 1px solid #dddddd;
+}

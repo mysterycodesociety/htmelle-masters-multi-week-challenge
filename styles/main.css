@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8cd1a8;
+  font-family: Helvetica, sans-serif;
+}
+
+a {
+  border-bottom: dotted 1px;
+  color: inherit;
+  text-decoration: none;
+}
+
+header h1, header h2, header h3 {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+header h2 {
+  font-size: 2em;
+}
+
+header h3 {
+  font-size: 2em;
+}
+
+#header {
+  top: 100px;
+  left: 0px;
+  width: 100%;
+  padding-bottom: 2%;
+  color: #ffffff;
+  opacity: 1;
+}
+
+#header p {
+  margin: 2em auto 0;
+  max-width: 55%;
+  text-align: center;
+  
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.content {
+  margin: 0 20%;
+  padding: 5em 3em;
+  color: #6f7577;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+}
+
+.content p {
+  line-height: 1.8em;
+  margin-bottom: 3em;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+ul#things {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul#things li {
+  width: 50%;
+  padding: 10%;
+}
+
+ul#things li i {
+   font-size: 5em;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.pictures .picture {
+  width: 50%;
+  padding: 0 10%;
+}
+
+.pictures .picture img {
+  width: 100%;
+}
+
+#footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 300px;
+  padding: 3em;
+}
+
+#footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+}
+
+#footer ul li {
+  padding: 0 1em;
+}
+
+#modal-window {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 340px;
+  height: 255px;
+  transition-property: height, width;
+  transition-duration: .5s, 1s;
+  transition-delay: 0s, .5s;
+  transition-timing-funtion: linear;
+  background-color: #8cd1a8;
+  color: white;
+  overflow: hidden;
+}
+
+#modal-window.closed {
+  width: 28px;
+  height: 25px;
+}
+
+#modal-window button {
+  max-width: 100%;
+  padding: 5px 10px;
+  float: right;
+  border: 1px solid #689C7D;
+  background-color: #8cd1a8;
+  color: white;
+}
+
+fieldset {
+  clear: both;
+  margin: 5px;
+  border-width: 2px;
+  border: 1px solid #689C7D;
+  transition: height .5s ease-in-out;
+  overflow: hidden;
+}
+
+fieldset div {
+  display: flex;
+  flex-direction: row;
+}

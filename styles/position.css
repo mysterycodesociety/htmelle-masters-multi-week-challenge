@@ -1,0 +1,22 @@
+/* Apply position fixed to the header so that the rest of the content appears to scroll after it */
+
+body.position #header {
+  position: fixed;
+  height: auto;
+  z-index: -1;
+}
+
+/* Apply a large margin above the first content so that you have enough space to read the heading */
+/* position: fixed will remove the div out of the current plane, so you have to push the current content down */
+
+body.position .content.first {
+  margin-top: 50%;
+}
+
+/* For smaller screens, make the top fixed as px instead of percent, since % will be very small */
+
+@media only screen and (max-width: 960px) {
+  body.position.media-queries .content.first {
+    margin-top: 500px;
+  }
+}

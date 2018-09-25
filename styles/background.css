@@ -1,0 +1,20 @@
+@keyframes image-cycle {
+    0%   {background-image: url('https://raw.githubusercontent.com/Gmfholley/htmelle-masters-assets/master/bg.jpg');}
+    25%  {background-image: url('https://raw.githubusercontent.com/Gmfholley/htmelle-masters-assets/master/pic01.jpg');}
+    50%  {background-image: url('https://raw.githubusercontent.com/Gmfholley/htmelle-masters-assets/master/pic02.jpg');}
+    100% {background-image: url('https://raw.githubusercontent.com/Gmfholley/htmelle-masters-assets/master/pic03.jpg');}
+}
+
+body.background-image {
+  background-image: url('https://raw.githubusercontent.com/Gmfholley/htmelle-masters-assets/master/bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no repeat;
+  background-attachment: fixed;
+}
+
+body.background-image.animations {
+  animation-name: image-cycle;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}

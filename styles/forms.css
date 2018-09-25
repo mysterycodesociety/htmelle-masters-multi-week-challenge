@@ -1,0 +1,57 @@
+body:not(.forms) #form {
+  display: none;
+}
+
+form {
+  max-width: 60%;
+  padding: 3em 1em;
+  margin: 0 auto;
+}
+
+input[type="text"], input[type="email"], textarea {
+  display: block;
+  width: 100%;
+  margin: 1em 0;
+  padding: .5em 1em;
+  line-height: 1.5em;
+  
+  background: rgba(144, 144, 144, 0.15);
+  border: none;
+  color: inherit;
+}
+
+input::placeholder, textarea::placeholder {
+  opacity: .3;
+}
+
+body.pseudo-classes input:focus, body.pseudo-classes input:active, 
+body.pseudo-classes textarea:focus, body.pseudo-classes textarea:active {
+  outline-color: #8cd1a8;
+  outline-width: 1px;
+  outline-offset:  -2px;
+}
+
+input[type="submit"] {
+  width: 200px;
+  max-width: 100%;
+  margin-top: 1em;
+  padding: .5em 2em;
+  
+  border: none;
+  background-color: #8cd1a8;
+  color: white;
+}
+
+body.pseudo-classes input[type="submit"]:hover {
+  opacity: .8;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-container input {
+  width: 45%;
+}
